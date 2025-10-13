@@ -6,17 +6,21 @@ body{
     margin: 0;
     background: var(--bg);
 }
-html, body, {
+html, body{
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
+    color: white; 
+    align-items: center;
 }
 .app{
     background: var(--card);
     padding: 20px;
     border-radius: var(--radius);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
+    
 }
+header
+{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+h1{margin:0;font-size:20px}
+p.lead{margin:0;color:var(--muted);font-size:13px}
