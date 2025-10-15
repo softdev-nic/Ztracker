@@ -29,6 +29,6 @@ form.addEventListener('submit', (e) => {
   tasks.push({ title, task, date });
   localStorage.setItem('tasks', JSON.stringify(tasks));
   console.log('New Task:', { title, task });
-  window.location.href = '/tasklist.html';
+  window.location.href = 'tasklist.html';
   form.reset(); 
 });
