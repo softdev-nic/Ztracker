@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    background: var(--bg);
+    color: white;
+    font-family: sans-serif;
+    flex-direction: column;
+    display: flex;
+}
+button{
+    cursor: pointer;
+    border-radius: 12px;
+    height: 28px;
+    border: none;
+    float: right;
+    flex-grow: calc(100% - 40px);
+}
+button:hover{
+    opacity: 0.9;
+    background-color: var(--success);
+}

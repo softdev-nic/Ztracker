@@ -12,7 +12,7 @@ form.innerHTML = `
   </label>
   <label>
     Task:
-    <textarea id="task" placeholder="Enter task details" required></textarea>
+    <textarea id="task-description" placeholder="Enter task details" required></textarea>
   </label>
   <button type="submit">Add</button>
 `;
@@ -23,7 +23,12 @@ document.body.appendChild(formcontainer);
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const title = document.getElementById('title').value;
-  const task = document.getElementById('task').value;
+  const task = document.getElementById('task-description').value;
+  const date = new Date().toISOString();
+  const tasks = JSON.parse(localStorage.getItem('tasks') || '[]');
+  tasks.push({ title, task, date });
+  localStorage.setItem('tasks', JSON.stringify(tasks));
   console.log('New Task:', { title, task });
+  window.location.href = '/tasklist.html';
   form.reset(); 
 });
