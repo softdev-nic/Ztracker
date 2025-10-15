@@ -6,13 +6,7 @@ body{
     margin: 0;
     background: var(--bg);
 }
-html, body{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    color: white; 
-    align-items: center;
-}
+ 
 .app{
     background: var(--card);
     padding: 20px;
@@ -24,3 +18,10 @@ header
 {display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
 h1{margin:0;font-size:20px}
 p.lead{margin:0;color:var(--muted);font-size:13px}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+}

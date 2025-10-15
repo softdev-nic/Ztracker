@@ -1,0 +1,13 @@
+.navbar{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.navbar a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
